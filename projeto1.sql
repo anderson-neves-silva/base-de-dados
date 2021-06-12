@@ -12,7 +12,7 @@ use base_de_dados;
 -- criando a tabela de transação
 create table if not exists transacao (
     id int not null auto_increment,
-    type varchar(10) not null,
+    tipo varchar(10) not null,
     nome varchar(200) not null,
     valor double not null,
     data_de_cadastro date not null,
