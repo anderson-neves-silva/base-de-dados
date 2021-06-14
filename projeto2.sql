@@ -16,8 +16,16 @@ create table if not exists usuario (
     primary key(id)
 ) default charset = utf8;
 
-
-
+-- criando a tabela de cartão
+create table if not exists cartao (
+    id int not null auto_increment,
+    numero int(16) not null,
+    cvv int(3) not null,
+    data_de_expiracao date not null,
+    valido enum('S', 'N') not null,
+    data_de_cadastro date not null,
+    primary key(id)
+) default charset = utf8;
 
 
 
