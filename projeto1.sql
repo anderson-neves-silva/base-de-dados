@@ -1,8 +1,10 @@
 -- verificando todos os bancos de dados 
-show databases;
+show databases
 
 -- criando o banco de dados
-create database base_de_dados;
+create database base_de_dados
+default character set utf8
+default collate utf8_general_ci;
 
 show databases;
 
