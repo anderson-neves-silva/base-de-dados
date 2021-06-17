@@ -6,14 +6,12 @@ create database base_de_dados
 default character set utf8
 default collate utf8_general_ci;
 
-show databases;
-
 -- selecionando para uso o banco de dados
 use base_de_dados;
 
 -- criando a tabela de transação
 create table if not exists transacao (
-    id int not null auto_increment,
+    id int unsigned not null auto_increment,
     tipo varchar(10) not null,
     nome varchar(200) not null,
     valor double not null,
